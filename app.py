@@ -4,8 +4,8 @@ import pyodbc
 app = Flask(__name__)
 
 # Veritabanı bağlantı ayarları
-DB_SERVER = 'BARAN\SQLEXPRESS'  # SQL Server adresiniz
-DB_NAME = 'GraduateThesisSystem'  # Veritabanı adı
+DB_SERVER = '******'  
+DB_NAME = '*******'  
 
 # Veritabanı bağlantısını oluştur
 def get_db_connection():
@@ -31,7 +31,6 @@ def index():
 
     try:
         cursor = connection.cursor()
-        # Tez başlığı ve yazar bilgilerini almak için sorgu
         cursor.execute("""
             SELECT 
                 t.ThesisID, 
@@ -42,7 +41,6 @@ def index():
         """)
         rows = cursor.fetchall()
 
-        # Tez listesini oluştur
         theses = [{"id": row[0], "title": row[1], "author": row[2]} for row in rows]
 
         return render_template('index.html', theses=theses)
