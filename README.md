@@ -25,17 +25,5 @@ A full-stack web application developed as part of a university project to manage
 
 ---
 
-## 🖼️ Screenshots
 
-> ![image](https://github.com/user-attachments/assets/4c424bfd-6abe-4d95-9ef2-a41425408bee)
-
-
----
-
-## 🚀 How to Run
-
-1. Clone the repo:
-   ```bash
-   git clone https://github.com/your-username/thesis-management-system.git
-   cd thesis-management-system
  
